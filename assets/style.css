@@ -49,3 +49,21 @@ h2 {
 main {
     background-color: lightgoldenrodyellow;
 }
+
+#first-project img{
+    height: 500px;
+    width: 500px;
+}
+
+.my-work ul {
+    display: flex;
+}
+.projects {
+    display: inline-block;
+    justify-content:end;
+}
+
+.projects img {
+    height: 300px;
+    width: 300px;
+}
