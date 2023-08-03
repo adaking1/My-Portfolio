@@ -3,62 +3,86 @@
 
 <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./assets/reset.css">
     <link rel="stylesheet" href="./assets/style.css">
+    <script src="https://kit.fontawesome.com/4ac965ab05.js" crossorigin="anonymous"></script>
     <title>Adam King's Web Development Portfolio</title>
 </head>
 
 <body>
-    <header id="main-header">
-        <h1>Adam King</h1>
-        <section>
-            <ul class="nav-bar">
-                <li>
-                    <a href="#about-me" title="About Me">About Me</a>
-                </li>
-                <li>
-                    <a href="my-work" title="My Work">My Work</a>
-                </li>
-                <li>
-                    <a href="contact" title="Contact">Contact</a>
-                </li>
-            </ul>
-        </section>
-    </header>
-    <aside>
-        <section>
-            <h2>About Me</h2>
-        </section>
-        <section">
-            <h2>My Work</h2>
-        </section>
-        <section>
-            <h2>Contact</h2>
-        </section>
-    </aside>
-    <main>
-        <section id="about-me">
-            <p>This is where the about me will be</p>
-        </section>
-        <!-- May want to put the below section in a list to make css easier -->
-        <section id="my-work">
-            <ul>
-                <li id="first-project">
-                    <img src="./assets/images/washington.jpg" alt="George Washington">
-                </li>
-                <li class="projects">
-                    <img src="./assets/images/cone.jpg" alt="Traffic Cone">
-                </li>
-                <li class="projects">
-                    <img src="./assets/images/plankton.jpg" alt="Plankton">
-                </li>
-                <li class="projects">
-                    <img src="./assets/images/whale.jpg" alt="Whale">
-                </li>
-            </ul>
-        </section>
-        <section id="contact">
-            <p>This is where my contact info will be</p>
-        </section>
 
+    <header id="main_header">
+        <h1>Adam King</h1>
+        <nav>
+            <a href="#about-me" title="About Me">About Me</a>
+            <a href="#my-work" title="My Work">My Work</a>
+            <a href="#contact" title="Contact">Contact</a>
+
+        </nav>
+    </header>
+
+    <section class="top_img">
+        <h2>Web Development Portfolio</h2>
+        <img src="./assets/images/background.jpg" alt="Background Image"/>
+        <img src="./assets/images/ME.jpg" alt="Recent photo of Adam with dog" id="my_pic"/>
+    </section>
+
+    <main>
+        <section id="about_me">
+            <h3>About Me</h3>
+            <div class="vertical_line">
+                <p class="content">This is where the about me will be ccccccccccsjidu d ok dk dk sdj d kdk sdk sdk sdik sdksd ks dllsd kdl kk ldslsd ksd k
+                soikdkjdkjds dk dkj d dkjk sdk sdk jsdkj sdkj sdkj sdkj dskj sdkj</p>
+            </div>
+        </section>
+    <hr />
+
+        <section id="my_work">
+            <h3>My Work</h3>
+            <div id="proj_list" class="vertical_line">
+                <ul class="content">
+                    <li class="project" id="first-project">
+                        <a href="https://adaking1.github.io/Horiseon-Marketing-Strategies/" title="Accesibility">
+                            <img src="./assets/images/Horiseon.png" alt="Horiseon Marketing Strategies Project">
+                        </a>
+                    </li>
+                    <li class="project">
+                        <img src="./assets/images/plankton.jpg" alt="Plankton">
+                    </li>
+                    <li class="project">
+                        <img src="./assets/images/plankton.jpg" alt="Plankton">
+                    </li>
+                    <li class="project">
+                        <img src="./assets/images/plankton.jpg" alt="Plankton">
+                    </li>
+                    <li class="project">
+                        <img src="./assets/images/plankton.jpg" alt="Plankton">
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <hr />
+        <section id="contact">
+            <h3>Contact</h3>
+            <div class="vertical_line">
+                <ul class="content" id="contact_info">
+                    <li>
+                        <a href="mailto:kingad672@gmail.com" id="email">Email</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/adaking1" class="icon" id="github">
+                            <i class="fa-brands fa-github fa-xl"></i> GitHub</a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/adam-king-ak/" class="icon" id="linkedin">
+                        <i class="fa-brands fa-linkedin fa-xl"></i>LinkedIn</a>
+                    </li>
+                    <li>
+                        <a href="https://docs.google.com/document/d/1bOeH1OA7rYGFnKzLwwkciK0BceJYjE7ZzMSbaK821bs/edit" id="resume">Resume</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
     </main>
 </body>
