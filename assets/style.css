@@ -1,3 +1,8 @@
+/* used a variable for the main color of the page */
+:root {
+    --main-color: lightcyan;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -12,7 +17,7 @@ a {
     color: #0000EE;
 }
 
-
+/* Changes the color of a link after it has been visited */
 a:visited {
     color: #551A8B;
 }
@@ -21,12 +26,12 @@ a:visited {
 p {
     font-size:20px;
     margin-right: 5%;
-    line-height: 25px;
+    line-height: 30px;
 }
 
 
 #main_header {
-    background-color:lightcyan;
+    background-color:var(--main-color);
 }
 
 h1 {
@@ -50,8 +55,10 @@ h2 {
     left:55%;
     top: 175px;
     font-size: 30px;
+    color: var(--main-color);
 }
 
+/* Image that is below the header but above the main section and goes across the whole page */
 .top_img img {
     width: 100%;
     max-height: 150px;
@@ -68,7 +75,7 @@ h2 {
 }
 
 main {
-    background-color: lightcyan;
+    background-color: var(--main-color);
 }
 
 main section {
@@ -77,23 +84,31 @@ main section {
     width: 100%;
 }
 
+/* Labels on the left side of the screen */
 h3{
     margin-left: 4%;
     font-size: 45px;
     max-width: 50px;
 }
 
+/* Section to the right of the h3's */
 .content {
     margin-left: 10%;
-    width:80%;
+    width:80%;    
 } 
 
+/* This is the line going vertically down each section splitting the h3's and their content */
 .vertical_line{
     border-left: 4px solid darkgreen;
     margin-left: 15%;
 }
 
+/* This is the class for all the projects */
+.project {
+    position: relative;
+}
 
+/* This is the image associated with each project */
 .project img {
     width: 46%;
     border: 5px solid blue;
@@ -101,9 +116,14 @@ h3{
     box-shadow: 10px 5px 10px lightslategray;
     margin: 2%;
     float: left;
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    
 
 }
 
+/* I used an id for the first project so I can override some of the settings originally set in .project */
 #first-project a {
     font-size: 25px;
     text-align:center;
@@ -115,9 +135,6 @@ h3{
     
 }
 
-#my_work > #proj_list >.content {
-    align-items: center;
-}
 #contact ul {
     display: flex;
     flex-wrap:wrap;
@@ -129,23 +146,27 @@ h3{
     padding-bottom: 10%;
     padding-top: 10%;
 }
-
+/* This is the element selector for the icon images used from Font Awesome */
 i {
     padding: 20px;
 }
 
+/* This is where I put the mail icon next to the word "Email" */
 #email::before {
     content: "\2709";
     padding: 20px;
 
 }
 
+/* This is where I put the pencil and paper icon next to the wor "Resume" */
 #resume::before {
     content:"\1F4DD";
     padding: 10px;
     
 }
 
+/* This media query stacks the project images, moves my personal picture to the left, 
+as well as centering the h2 element when the screen size is less than 991px */
 @media screen and (max-width: 991px) {
     .project img {
         width:70%;
@@ -158,12 +179,14 @@ i {
     #my_pic {
         left: 5px;
     }
-    .project_title {
-        width:100%;
-        text-align: center;
+    #first-project a {
+        font-size: 22px;
     }
 }
 
+/* This media query stacks the contact info, centers and stacks the nav bar, centers my name,
+moves my picture up to the main heading, and makes the font size for the first project smaller
+when the screen is less than 768px */
 @media screen and (max-width: 768px) {
     #contact li {
         width: 100%;
@@ -192,7 +215,8 @@ i {
     }
    
 }
-
+/* This media query moves the vertical line to the left, and makes the first project's font size smaller
+when the screen size is less than 479px */
 @media screen and (max-width: 479px) {
     .vertical_line {
         margin: 18%;
