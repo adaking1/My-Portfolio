@@ -88,7 +88,7 @@ main section {
 /* Labels on the left side of the screen */
 h3{
     margin-left: 4%;
-    font-size: 45px;
+    font-size: 40px;
     max-width: 50px;
 }
 
@@ -111,7 +111,7 @@ h3{
 
 /* This is the image associated with each project */
 .project img {
-    width: 46%;
+    width: 35%;
     border: 5px solid blue;
     border-radius: 50px;
     box-shadow: 10px 5px 10px lightslategray;
@@ -128,11 +128,12 @@ h3{
 #first-project a {
     font-size: 25px;
     text-align:center;
-    display: block;
+    display: flex;
+    flex-direction: column;
 }
 
 #first-project img{
-    width: 100%;
+    width: 85%;
     
 }
 
@@ -170,7 +171,7 @@ i {
 as well as centering the h2 element when the screen size is less than 991px */
 @media screen and (max-width: 991px) {
     .project img {
-        width:70%;
+        width:60%;
     }
     h2 {
         left:0;
@@ -191,6 +192,10 @@ when the screen is less than 768px */
 @media screen and (max-width: 768px) {
     #contact li {
         width: 100%;
+    }
+    h1{
+        margin: auto;
+        font-size: 45px;
     }
     h1, nav a {
         text-align: center;
